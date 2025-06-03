@@ -1,0 +1,7 @@
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csproj.AssemblyReference.cache
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll.config
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.pdb
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.dll
+C:\Users\orcoh\OneDrive\שולחן העבודה\B25 Ex04 OriCohen 207008590 AlonZylberberg 315853739\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.pdb
