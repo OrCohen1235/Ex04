@@ -14,7 +14,12 @@ namespace Ex04.Menus.Events
 
         public MenuNavigatorEvents(MenuItemEvents i_RootMenu)
         {
-            r_Root = i_RootMenu ?? throw new ArgumentNullException(nameof(i_RootMenu));
+            if (i_RootMenu == null)
+            {
+                throw new ArgumentNullException(nameof(i_RootMenu), "Root menu cannot be null.");
+            }
+
+            r_Root = i_RootMenu;
             m_CurrentMenu = r_Root;
             m_MenuStack = new Stack<MenuItemEvents>();
         }

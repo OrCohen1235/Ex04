@@ -14,15 +14,35 @@ namespace Ex04.Menus.Events
 
         public MenuItemEvents(string i_Title, IList<MenuItemEvents> i_SubItems)
         {
-            m_Title = i_Title ?? throw new ArgumentNullException(nameof(i_Title));
-            m_SubItems = i_SubItems ?? new List<MenuItemEvents>();
+            if (i_Title == null)
+            {
+                throw new ArgumentNullException(nameof(i_Title), "Title cannot be null.");
+            }
+
+            if (i_SubItems == null)
+            {
+                throw new ArgumentNullException(nameof(i_SubItems), "Sub-items cannot be null.");
+            }
+
+            m_Title = i_Title;
+            m_SubItems = i_SubItems;
             m_ActionToExecute = null;
         }
 
         public MenuItemEvents(string i_Title, Action i_ActionToExecute)
         {
-            m_Title = i_Title ?? throw new ArgumentNullException(nameof(i_Title));
-            m_ActionToExecute = i_ActionToExecute ?? throw new ArgumentNullException(nameof(i_ActionToExecute));
+            if (i_Title == null)
+            {
+                throw new ArgumentNullException(nameof(i_ActionToExecute), "Action to execute cannot be null.");
+            }
+
+            if (i_ActionToExecute == null)
+            {
+                throw new ArgumentNullException(nameof(i_ActionToExecute), "Action to execute cannot be null.");
+            }
+
+            m_Title = i_Title;
+            m_ActionToExecute = i_ActionToExecute;
             m_SubItems = new List<MenuItemEvents>();
         }
 
@@ -49,6 +69,4 @@ namespace Ex04.Menus.Events
             }
         }
     }
-
-
 }

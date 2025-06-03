@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Ex04.Menus.Interfaces
 {
-
     public class MenuItem : IMenuItem
     {
         private readonly string m_Title;
@@ -15,15 +14,33 @@ namespace Ex04.Menus.Interfaces
 
         public MenuItem(string i_Title, IList<IMenuItem> i_SubItems)
         {
-            m_Title = i_Title ?? throw new ArgumentNullException(nameof(i_Title));
-            m_SubItems = i_SubItems ?? new List<IMenuItem>();
+            if (i_Title == null)
+            {
+                throw new ArgumentNullException(nameof(i_Title), "Title cannot be null.");
+            }
+            if (i_SubItems == null)
+            {
+                throw new ArgumentNullException(nameof(i_SubItems), "SubItems cannot be null.");
+            }
+
+            m_Title = i_Title;
+            m_SubItems = i_SubItems;
             m_Action = null;
         }
 
         public MenuItem(string i_Title, IMenuAction i_Action)
         {
-            m_Title = i_Title ?? throw new ArgumentNullException(nameof(i_Title));
-            m_Action = i_Action ?? throw new ArgumentNullException(nameof(i_Action));
+            if (i_Title == null)
+            {
+                throw new ArgumentNullException(nameof(i_Title), "Title cannot be null.");
+            }
+            if (i_Action == null)
+            {
+                throw new ArgumentNullException(nameof(i_Action), "Action cannot be null.");
+            }
+
+            m_Title = i_Title;
+            m_Action = i_Action;
             m_SubItems = new List<IMenuItem>();
         }
 
